@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1009
+date: 2013-12-23
+img: 23-12-2013.jpg
+alt: image-alt
+size: 21x30cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Sant Agustí Vell. 
+description: <p>The name of the square was formed in 1309 year by the augustinian friars. Well now this square it is tiny, calm and cosy place of BCN. Just look on image of the balcony. To establish the balcony, make order by filling in the form below.</p>
+---

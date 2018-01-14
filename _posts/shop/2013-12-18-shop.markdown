@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1013
+date: 2013-12-18
+img: 18-12-2013.jpg
+alt: image-alt
+size: 13x18cm
+price: 39€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Carrer de Sant Pere Més Baix 71. 
+description: <p> Have you ever had the real mandarins on your balcony? It is good time to plant the mandarines. </p> <p>To plant the mandarines in your flat fill in the form below to make an order.</p>
+---

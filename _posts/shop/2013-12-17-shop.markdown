@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1014
+date: 2013-12-17
+img: 17-12-2013.jpg
+alt: image-alt
+size: 13x18cm
+price: 39€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Carrer de Mallorca 172. 
+description: <p> Balcony en carrer de Mallorca. </p> <p> You can order the image by filling in the form below. </p> <p> Please write down if you want as well one kilo of radish.</p>
+---

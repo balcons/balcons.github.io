@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1008
+date: 2013-12-24
+img: 24-12-2013.jpg
+alt: image-alt
+size: 21x30cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Conservatori de Barcelona. 
+description: <p>In geometry, a diagonal is a line segment joining two nonconsecutive vertices of a polygon or polyhedron. But that is a bit other Diagonal. One that have spectacular architecture. By the way, on this balcony lived "giris". </p> <p> No matter if you are giri or not - fill in the form below to get a part of line segment joining two nonconsecutive vertices as your property. </p> <p> And don't ask me about who is "giri". Better ask google. </p>
+---

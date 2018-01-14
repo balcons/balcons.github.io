@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1010
+date: 2013-12-22
+img: 22-12-2013.jpg
+alt: image-alt
+size: 13x18cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Carrer de Buenaventura Muño 39. 
+description: <p> This balcony have a roll-down curtains. If you like it make order by filling in the form below.</p>
+---

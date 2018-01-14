@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1006
+date: 2013-12-26
+img: 26-12-2013.jpg
+alt: image-alt
+size: 13x18cm
+price: 30€
+shipping: Not included
+category: shop
+title: Mi Barcelona.  Calle Fusina 3. 
+description: <p> Amazing balconies in front of the Born market. El mercat del Born - the Born market one of the best examples of Cast-iron architecture. The market was developed by Joseph Fontserè o Mestre and opened in 1876 year and this was the beginning of the markets of iron in Barcelona. Only imagine how it is fabulous to live in front of such wonderful place.</p> <p>You want to have the same balcony in your house? Please fill in the form below to make an order. </p>
+---

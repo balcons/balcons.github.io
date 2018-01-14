@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1001
+date: 2013-12-31
+img: 31-12-2013.jpg
+alt: image-alt
+size: 21x30cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Avinguda Diagonal 450 
+description: <p>Mi Barcelona. Avinguda Diagonal 450. Ildefons Cerdà was genial Catalan urban planner. Avinguda Diagonal is one of the most important avenues in Barcelona. If you'll go across the Diagonal you can find one beautiful church - Iglesia y Convento de Pompeia. The architects of this masterpiece were Enric Sagnier i Villavecchia.</p> <p>I wish you to bring in your house coziness and calmness enjoying this genial masterpiece. Please fill in the form below to make order.</p>
+---

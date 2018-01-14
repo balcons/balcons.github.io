@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1011
+date: 2013-12-21
+img: 21-12-2013.jpg
+alt: image-alt
+size: 21x30cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Plaça de la Universitat. 
+description: <p> In Plaça de la Universitat you can feel unrepeatable spirit of student life. This balcony and  the cat are feeling this spirit.</p> <p>Fill in the form below to make an order. The cat not included.</p>
+---

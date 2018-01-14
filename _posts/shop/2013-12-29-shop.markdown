@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1003
+date: 2013-12-29
+img: 29-12-2013.jpg
+alt: image-alt
+size: 21x30cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Mare de Déu dels Àngels. 
+description: <p>Mare de Déu dels Àngels - the chirch was build in 1942 year. Just look on the top. The top of the church was made in style of Ammericat skysrappers. That is how the real artists make integration of churches in city. It is genial.</p> <p>To have your own skyscrapper-church make an order by filling the form below. </p>
+---

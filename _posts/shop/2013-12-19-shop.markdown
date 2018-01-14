@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1013
+date: 2013-12-19
+img: 19-12-2013.jpg
+alt: image-alt
+size: 13x18cm
+price: 39€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Balcony in Casanova 201 street. 
+description: <p> This is the balcony on street Casanova. So much flowers! What do you think? Could it be the balcony of real Casanova?</p> <p>If you wanna have the balcony of Casanova fill in the form below to make an order.</p>
+---

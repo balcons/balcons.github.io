@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1004
+date: 2013-12-28
+img: 28-12-2013.jpg
+alt: image-alt
+size: 13x18cm
+price: 40€
+shipping: Not included
+category: shop
+title: Mi Barcelona.UB. 
+description: <p>Universitat de Barcelona - UB. Well you should go there one day. A lot of people have first impression that it wasn't University but the Church. So if you like small lakes with fish, gardens with cats and beauty architecture you should go there.</p> <p> And you can start enjoy it by decorating your house with one of the UB window. Just fill in the form below to make an order.</p> <p>And silence please, the lessons are going.</p>
+---

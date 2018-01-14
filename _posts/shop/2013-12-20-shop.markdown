@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1012
+date: 2013-12-20
+img: 20-12-2013.jpg
+alt: image-alt
+size: 21x30cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Plaça de Francesc Macià. 
+description: <p> The square was developed by Nicolau Rubió i Tudurí in the 1930s. Please, if you are blonde/rubio, this square is for you. </p> <p>Fill in the form below to make an order of this Plaça.</p>
+---

@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1007
+date: 2013-12-25
+img: 25-12-2013.jpg
+alt: image-alt
+size: 21x30cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Conservatori de Barcelona. 
+description: <p>Do you hear the music? That´s right, that is the Municipal Conservatory of Barcelona. It was founded by the Municipal Band of Barcelona as a school of music on 1886.</p> <p>The cat is ready to listen the magical music.</p> <p>And you?</p> <p>Make the order by filling in the form below and you gonna have the Municipal Conservatory of Barcelona on your table.</p>
+---

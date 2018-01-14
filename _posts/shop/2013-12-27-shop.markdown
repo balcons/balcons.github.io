@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1005
+date: 2013-12-27
+img: 27-12-2013.jpg
+alt: image-alt
+size: 13x18cm
+price: 40€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Carrer del Comerç. 
+description: <p>Do you like chocolate? And without sweet chocolate you feel like in barracks? Well just look on the balcony in front of Museo de Chocolate. Yeh, the museum was build on the ground level of an old barracks but it is just a history. Believe, there you will feel yourself like in heaven. </p> <p>This poor balcony staring whole his life on this museum, but never tasted the chocolate, unlike the people who lives there. Well, if you like the chocolate then make an order by filling in the form below.</p>
+---

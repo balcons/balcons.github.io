@@ -1,0 +1,13 @@
+---
+layout: shop
+modal-id: 1999
+date: 2013-12-30
+img: 30-12-2013.jpg
+alt: image-alt
+size: 21x30cm
+price: 45€
+shipping: Not included
+category: shop
+title: Mi Barcelona. Diagonal 423. Casa Sayrach.  
+description: <p> Casa Sayrach. The building was built in 1918 by architect and writer Manuel Sayrach. The style reminds a bit the style of Gaudi. And the interesting fact is that by the moment when Sayrach planned this building he hadn't completed his degree. Well yes, degree mean nothing if you can create masterpiece like that. </p> <p> If you like Manuel's architecture and my interpretation of it, please fill in the form below to make an order. Don't forget to write down your wishes or questions if you have :) </p>
+---
