@@ -2,6 +2,27 @@
 <html>
     {% include head.html %}
     <body id="page-top" class="index">
+    {% include nav.html %}
+    {% include header.html %}
+    {% include portfolio_grid.html %}
+    {% include about.html %}
+
+    {% if site.contact == "static" %}
+    {% include contact_static.html %}
+    {% else %}
+    {% include contact.html %}
+    {% endif %}
+
+    {% include footer.html %}
+    {% include modals.html %}
+    {% include js.html %}
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body id="page-top" class="index">
     {% include nav4.html %}
     {% include portfolio4_grid.html %}
     {% include about4.html %}
@@ -16,4 +37,4 @@
     {% include modals4.html %}
     {% include js.html %}
     </body>
-</html>
+</html> -->
