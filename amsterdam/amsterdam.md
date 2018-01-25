@@ -1,3 +1,3 @@
 ---
-layout: amsterdam
+layout: shop
 ---
