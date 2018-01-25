@@ -1,6 +1,6 @@
  <!-- Portfolio Modals -->
  {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" data-keyboard="true" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" data-keyboard="true" role="dialog" aria-hidden="true" data-latlng="{{ post.latlng }}">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -12,33 +12,35 @@
                 <div class="row">
                     <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-6" "col-lg-offset-2">
                         <div class="modal-body">
                             <img src="../../img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                         </div>
                     </div>
                     <!-- Google Map -->
+                    <div class="col-lg-6">
+                        <div id="vit-tmp" class="img-centered map-canvas" style="width: 85%; height: 512px; margin-top: 20px;"></div>
+                        <!-- <div id="pano" style="width: 45%; height: 300px;"></div> -->
+                    </div>
                 </div>
                 
                     {{ post.description }}
-                    <ul class="list-inline item-details">
-
-                       <li>Size:
-                            <strong>{{ post.size }}
+                  <ul class="list-inline item-details">
+                      <!--  <li>Client:
+                            <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
                             </strong>
                         </li>
-                        <li>Price:
-                            <strong>{{ post.price }}
+                        <li>Date:
+                            <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
                             </strong>
                         </li>
-                        <li>Shipping:
-                            <strong>{{ post.shipping }}
+                        <li>Service:
+                            <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
                             </strong>
-                        </li>
-
+                        </li> -->
                     </ul>
                     <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                    {% include contact_static4.html %}
+                    
             </div>
             </div>
     </div>
