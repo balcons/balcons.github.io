@@ -8,5 +8,5 @@ client: Start Bootstrap
 project-date: 2015
 category: amsterdam
 description: 75 Ruyschstraat, Amsterdam
-latlng: 52.373058,4.8794853
+latlng: 52.3579638,4.9119075
 ---
