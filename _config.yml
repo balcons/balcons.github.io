@@ -2,7 +2,7 @@
 title: Find your balcony on the map!
 email: balconsche@gmail.com
 url: https://balcons.github.io
-description: "This is my personal website where I publish my works."
+description: "Enjoy the balconies!"
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form
 contact: static
@@ -15,21 +15,21 @@ color:
 
 # Footer settings
 footer:
-  copyright: Maryna Chervinska @itmaryna
+  copyright: Chervinska @SarochkaChe
   location: Location
   social: Around the Web
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/itmaryna
-  - title: facebook
-    url: https://www.facebook.com/marina.dollarbill
-  - title: behance
-    url: http://behance.com/itmaryna
-  - title: github
-    url: http://github.com/itmaryna
+#social:
+#  - title: twitter
+#    url: http://twitter.com/itmaryna
+#  - title: facebook
+#    url: https://www.facebook.com/marina.dollarbill
+#  - title: behance
+#    url: http://behance.com/itmaryna
+#  - title: github
+#    url: http://github.com/itmaryna
 
 # Postal address (add as many lines as necessary)
 address:
