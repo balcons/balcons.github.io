@@ -1,0 +1,26 @@
+Searching 219 files for "Bevan"
+
+0 matches
+
+Searching 219 files for "'Tienne', serif;"
+
+/Users/Marina/balcons/_includes/css/main.css:
+   38  h6 {
+   39      text-transform: uppercase;
+   40:     font-family: 'Tienne', serif;
+   41      font-weight: 700;
+   42  }
+   ..
+  104      display: block;
+  105      text-transform: uppercase;
+  106:     font-family: 'Tienne', serif;
+  107      font-size: 2em;
+  108      font-weight: 700;
+  ...
+  157  .navbar {
+  158      text-transform: uppercase;
+  159:     font-family: 'Tienne', serif;
+  160      font-weight: 700;
+  161  }
+
+3 matches in 1 file
