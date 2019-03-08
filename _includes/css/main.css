@@ -36,8 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: 'Bevan';
+    font-family: 'Ultra', serif;
     font-weight: 700;
 }
 
@@ -102,8 +101,8 @@ header img {
 
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: 'Bevan';
+ /*!   text-transform: uppercase;*/
+    font-family: 'Ultra', serif;
     font-size: 2em;
     font-weight: 700;
 }
@@ -155,7 +154,7 @@ header .intro-text .skills {
 }
 
 .navbar {
-    font-family: 'Bevan';
+    font-family: 'Ultra', serif;
     font-weight: 700;
 }
 
