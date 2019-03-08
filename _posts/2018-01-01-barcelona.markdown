@@ -6,7 +6,7 @@ img: 2018-01-01-carlespiysuner.jpg
 alt: image-alt
 project-date: 2017
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Fundació Carles Pi i Sunyer
 latlng: 41.3851073,2.1737217
 ---
