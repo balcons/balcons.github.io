@@ -156,6 +156,7 @@ header .intro-text .skills {
 .navbar {
     font-family: 'Domine', serif;
     font-weight: 700;
+     text-transform: uppercase;
 }
 
 .navbar a:focus {
