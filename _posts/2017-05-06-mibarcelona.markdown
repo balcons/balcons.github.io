@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2017
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcony on Carrer del Consell de Cent 291.
+description:Balcony on Carrer del Consell de Cent 291.
 latlng: 41.3883522,2.1620187
 ---

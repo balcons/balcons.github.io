@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en San Pedro.
+description: Balcon en San Pedro.
 latlng: 41.38743,2.179656
 ---

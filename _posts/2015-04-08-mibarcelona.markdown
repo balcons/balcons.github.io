@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en la Calle Londres 88.
+description: Balcon en la Calle Londres 88.
 latlng: 41.393134,2.150342
 ---

@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en Carrer de Casanova 201.
+description: Balcon en Carrer de Casanova 201.
 latlng: 41.393072,2.148642
 ---

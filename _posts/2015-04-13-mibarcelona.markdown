@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Conservatorio Municipal de Música de Barcelona en carrer de Valencia 330.
+description: Conservatorio Municipal de Música de Barcelona en carrer de Valencia 330.
 latlng: 41.395973,2.167311
 ---

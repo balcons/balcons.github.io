@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en Carrer Nou de la Rambla 133.
+description: Balcon en Carrer Nou de la Rambla 133.
 latlng: 41.37321,2.168276
 ---

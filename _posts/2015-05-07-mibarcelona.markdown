@@ -8,6 +8,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en  Carrer del Comerç 17.
+description: Balcon en  Carrer del Comerç 17.
 latlng: 41.38694,2.181943
 ---

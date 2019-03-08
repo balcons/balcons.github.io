@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balmes 78.
+description: Balmes 78.
 latlng: 41.390797,2.160665
 ---

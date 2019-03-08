@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2017
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcony on the Carrer de Casals i Cuberó, 288.
+description: Balcony on the Carrer de Casals i Cuberó, 288.
 latlng: 41.4431873,2.1775878
 ---

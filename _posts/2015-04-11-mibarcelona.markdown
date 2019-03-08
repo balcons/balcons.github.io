@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en El Raval. Plaça de Sant Pere 14.
+description: Balcon en El Raval. Plaça de Sant Pere 14.
 latlng: 41.389372,2.178775
 ---

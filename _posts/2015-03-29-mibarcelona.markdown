@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Calle Fusina.
+description: Calle Fusina.
 latlng: 41.386161,2.18286
 ---

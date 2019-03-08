@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en la antigua esquerra de l´Eixample. 199 Carrer de Casanova.
+description: Balcon en la antigua esquerra de l´Eixample. 199 Carrer de Casanova.
 latlng: 41.39297,2.148778
 ---

@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en la plaça Universitat.
+description: Balcon en la plaça Universitat.
 latlng: 41.385994,2.164524
 ---

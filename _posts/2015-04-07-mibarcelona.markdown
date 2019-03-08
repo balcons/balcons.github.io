@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en Plaça de Catalunya, 11.
+description: Balcon en Plaça de Catalunya, 11.
 latlng: 41.387402,2.168572
 ---

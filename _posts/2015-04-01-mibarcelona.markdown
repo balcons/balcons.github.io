@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en Carrer de Colomines.
+description: Balcon en Carrer de Colomines.
 latlng: 41.385983,2.17931
 ---

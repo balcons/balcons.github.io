@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en Avinguda Diagonal.
+description: Balcon en Avinguda Diagonal.
 latlng: 41.394825,2.153316
 ---

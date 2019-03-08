@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en Avinguda Diagonal 423.
+description: Balcon en Avinguda Diagonal 423.
 latlng: 41.394719,2.153034
 ---

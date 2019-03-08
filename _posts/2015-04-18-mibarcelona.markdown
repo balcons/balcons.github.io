@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2015
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcon en Pla del Palau.
+description: Balcon en Pla del Palau.
 latlng: 41.383196,2.182969
 ---

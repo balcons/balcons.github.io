@@ -7,6 +7,6 @@ alt: image-alt
 project-date: 2017
 client: Start Bootstrap
 category: mibarcelona
-description: Mi Barcelona. Balcony on Carrer de Torrijos 19.
+description: Balcony on Carrer de Torrijos 19.
 latlng: 41.4032866,2.158983
 ---
