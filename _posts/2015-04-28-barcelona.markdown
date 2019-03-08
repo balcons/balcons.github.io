@@ -6,7 +6,7 @@ img: 28-04-2015-diagonal.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en Avinguda Diagonal 423.
 latlng: 41.394719,2.153034
 ---

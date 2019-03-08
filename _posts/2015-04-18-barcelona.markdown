@@ -6,7 +6,7 @@ img: 2015-04-18-PlaDelPalau.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en Pla del Palau.
 latlng: 41.383196,2.182969
 ---

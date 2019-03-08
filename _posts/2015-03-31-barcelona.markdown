@@ -6,7 +6,7 @@ img: 2015-03-31-placa_universitat.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en la plaça Universitat.
 latlng: 41.385994,2.164524
 ---

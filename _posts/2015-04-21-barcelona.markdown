@@ -6,7 +6,7 @@ img: 2015-04-21-dreta_de_eixample.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en Avinguda Diagonal, 450.
 latlng: 41.396492,2.158575
 ---

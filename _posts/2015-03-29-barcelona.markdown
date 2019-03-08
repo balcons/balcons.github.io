@@ -6,7 +6,7 @@ img: 2015-03-29-Carrer_del_Comerc.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Calle Fusina.
 latlng: 41.386161,2.18286
 ---

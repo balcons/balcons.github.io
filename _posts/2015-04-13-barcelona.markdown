@@ -6,7 +6,7 @@ img: 2015-04-13-dreta_de_eixample.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Conservatorio Municipal de Música de Barcelona en carrer de Valencia 330.
 latlng: 41.395973,2.167311
 ---

@@ -6,7 +6,7 @@ img: 2015-03-26-edificio_diagonal.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en Avenida Diagonal.
 latlng: 41.393557,2.148372
 ---

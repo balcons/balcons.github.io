@@ -7,7 +7,7 @@ img: 2015-05-07-sant_august_webi.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en  Carrer del Comerç 17.
 latlng: 41.38694,2.181943
 ---

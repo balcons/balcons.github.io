@@ -6,7 +6,7 @@ img: 2015-03-30-La_Antigua_Esquerra_de_lEixample.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en la antigua esquerra de l´Eixample.
 latlng: 41.393366, 2.152747
 ---

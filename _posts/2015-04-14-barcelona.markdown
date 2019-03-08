@@ -6,7 +6,7 @@ img: 2015-04-14-san_pedro.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en San Pedro.
 latlng: 41.38743,2.179656
 ---

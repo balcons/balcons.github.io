@@ -6,7 +6,7 @@ img: 2015-04-11-el_raval.png
 alt: image-alt
 project-date: 2015
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcon en El Raval. Plaça de Sant Pere 14.
 latlng: 41.389372,2.178775
 ---
