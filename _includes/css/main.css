@@ -149,12 +149,12 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 3.5em;
     }
 }
 
 .navbar {
-    font-family: 'Arbutus Slab', serif;
+    font-family: 'Bevan';
     font-weight: 700;
 }
 
