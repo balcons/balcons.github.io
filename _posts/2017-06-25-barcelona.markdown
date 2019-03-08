@@ -6,7 +6,7 @@ img: 2017-06-25-fundaciocarlespi.png
 alt: image-alt
 project-date: 2017
 client: Start Bootstrap
-category: barcelona
+category: mibarcelona
 description: Balcony on Avinguda del Portal de l'Àngel 8.
 latlng: 41.3851073,2.1737217
 ---
