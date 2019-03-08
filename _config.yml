@@ -17,7 +17,7 @@ color:
 footer:
   copyright: Chervinska @SarochkaChe
   location: Location
-  social: Around the Web
+#  social: Around the Web
   credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
