@@ -164,6 +164,7 @@ header .intro-text .skills {
 
 .navbar .navbar-nav {
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .navbar .navbar-nav li a:focus {
