@@ -36,7 +36,7 @@ address:
   - line: Barcelona, Spain
 
 # Credits content
-credits: '@vitovalov & Jerome Lachaud'
+credits: 'Jerome Lachaud'
 
 # Build settings
 markdown: kramdown

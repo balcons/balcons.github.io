@@ -1,0 +1,70 @@
+Searching 222 files for ""
+
+/Users/Marina/balcons/_config.yml:
+   16  # Footer settings
+   17  footer:
+   18:   copyright: Cheervinska
+   19    location: Location
+   20  # social: Around the Web
+
+1 match in 1 file
+
+
+Searching 222 files for "credits"
+
+/Users/Marina/balcons/_config.yml:
+   19    location: Location
+   20  #  social: Around the Web
+   21:   credits: Credits
+   22  
+   23  # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+   ..
+   36    - line: Barcelona, Spain
+   37  
+   38: # Credits content
+   39: credits: 'Jerome Lachaud'
+   40  
+   41  # Build settings
+
+/Users/Marina/balcons/_includes/footer.html:
+   23                      </div>
+   24                      <div class="footer-col col-md-4">
+   25:                         <h3>{{ site.footer.credits }}</h3>
+   26:                         <p>{{ site.credits }}</p>
+   27                      </div>
+   28                  </div>
+
+6 matches across 2 files
+
+
+Searching 222 files for 
+
+/Users/Marina/balcons/_includes/about.html:
+   14                  </div>
+   15                  <div class="col-lg-4">
+   16:                     <p style="color: #ffffff;">Please fill in the form below if you want to get in contact with me:) </p>
+   17                  </div>
+   18              </div>
+
+/Users/Marina/balcons/_includes/about2.html:
+   14                  </div>
+   15                  <div class="col-lg-4">
+   16:                     <p style="color: #ffffff;">Please fill in the form below if you would like to collaborate.:)</p>
+   17                  </div>
+   18              </div>
+
+/Users/Marina/balcons/_includes/about3.html:
+   14                  </div>
+   15                  <div class="col-lg-4">
+   16:                     <p style="color: #ffffff;">Please fill in the form below if you would like to collaborate:)</p>
+   17                  </div>
+   18              </div>
+
+/Users/Marina/balcons/_includes/about4.html:
+   14                  </div>
+   15                  <div class="col-lg-4">
+   16:                     <p style="color: #ffffff;">Please fill in the form below if you would like to collaborate:)</p>
+   17                  </div>
+   18              </div>
+
+4 matches across 4 files
