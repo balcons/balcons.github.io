@@ -2,7 +2,7 @@
 layout: default
 modal-id: 47
 date: 2019-10-28
-img: 2019-10-28-arribaulagartija.png
+img: 2019-10-28-arribaulagartija.jpg
 alt: image-alt
 project-date: 2019
 client: Start Bootstrap
