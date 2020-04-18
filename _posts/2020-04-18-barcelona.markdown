@@ -7,6 +7,7 @@ alt: image-alt
 project-date: 2020
 client: Start Bootstrap
 category: mibarcelona
-description: Catalonia during Coronavirus 2020, special place for illustrator. Carrer del Torrent de l'Olla, 143-135, 08012 Barcelona
-latlng: 41.4034216,2.1534111,17
+description: Catalonia during Coronavirus 2020, special place for illustrator. 
+Carrer del Torrent de l'Olla, 143-135, 08012 Barcelona
+latlng: 41.4033473,2.1557116,3a
 ---
