@@ -2,7 +2,7 @@
 layout: default
 modal-id: 53
 date: 2020-05-03
-img: 020-05-03-torrent.jpg
+img: 2020-05-03-torrent.jpg
 alt: image-alt
 project-date: 2020
 client: Start Bootstrap
