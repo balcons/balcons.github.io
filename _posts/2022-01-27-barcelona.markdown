@@ -2,7 +2,7 @@
 layout: default
 modal-id: 67
 date: 2022-01-27
-img: 2022-01-27.jpg
+img: 2021-11-16-bardepla.jpg
 alt: image-alt
 project-date: 2021
 client: Start Bootstrap
