@@ -1,3 +1,3 @@
 ---
-layout: world
+layout: amsterdam
 ---
