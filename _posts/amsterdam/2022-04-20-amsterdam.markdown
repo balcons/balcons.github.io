@@ -7,6 +7,6 @@ alt: image-alt
 client: Start Bootstrap
 project-date: 2015
 category: amsterdam
-description: somewhere in Napoli - I promise I will find the exact direction. But look on this creativity. Love.
-latlng: 52.367027,4.8847881
+description: somewhere in Napoli. Unfortunately I lost the direction. Want back to Napoli.
+latlng: 40.8567009,14.256643,3a
 ---
