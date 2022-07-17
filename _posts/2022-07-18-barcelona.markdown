@@ -2,7 +2,7 @@
 layout: default
 modal-id: 73
 date: 2022-07-18
-img: 2022-07-18-ramblacat.jpg
+img: 2022-07-18-ramblacata.jpg
 alt: image-alt
 project-date: 2022
 client: Start Bootstrap
