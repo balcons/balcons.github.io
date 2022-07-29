@@ -8,5 +8,5 @@ project-date: 2022
 client: Start Bootstrap
 category: mibarcelona
 description: Hotel Catalonia Catedral - 8 Carrer dels Arcs, Barcelona, Catalonia
-latlng: @41.3846297,2.1744678,3a
+latlng: 41.3846297,2.1744678,3a
 ---
