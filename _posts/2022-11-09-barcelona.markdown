@@ -2,7 +2,7 @@
 layout: default
 modal-id: 77
 date: 2022-11-09
-img: 2022-11-00-figuerasastronaut.jpg
+img: 2022-11-09-figuerasastronaut.jpg
 alt: image-alt
 project-date: 2022
 client: Start Bootstrap

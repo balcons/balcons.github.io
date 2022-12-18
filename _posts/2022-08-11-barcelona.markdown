@@ -2,7 +2,7 @@
 layout: default
 modal-id: 75
 date: 2022-08-11
-img: 11-08-2022-carmina.jpg
+img: 2022-08-11-carmina.jpg
 alt: image-alt
 project-date: 2022
 client: Start Bootstrap
