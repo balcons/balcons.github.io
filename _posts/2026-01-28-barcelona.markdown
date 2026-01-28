@@ -2,7 +2,7 @@
 layout: default
 modal-id: 94
 date: 2026-01-28
-img: 2026-01-28-handsup.jpg
+img: 2026-01-28-handsup.png
 alt: image-alt
 project-date: 2026
 client: Start Bootstrap
