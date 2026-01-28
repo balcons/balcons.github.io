@@ -8,5 +8,5 @@ project-date: 2026
 client: Start Bootstrap
 category: mibarcelona
 description: Put your hands up! Plaça de Sant Agustí, Raval, Ciutat Vella, 08001 Barcelona
-latlng: @41.3807193,2.1720452,3a
+latlng: 41.3807193,2.1720452,3a
 ---
