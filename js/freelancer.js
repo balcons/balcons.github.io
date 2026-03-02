@@ -68,7 +68,7 @@ $(window).on('scroll', function () {
         // Small vertical parallax based on position in viewport
         var normalized = (distance / winHeight) - 0.5; // -0.5 .. 0.5
         var offset = normalized * -20; // -10px .. 10px
-        $img.css('transform', 'translateY(' + offset + 'px) scale(1.02)');
+        $img.css('transform', 'translateY(' + offset + 'px)');
     });
 });
 
