@@ -87,6 +87,13 @@ header {
     text-align: center;
     color: #fff;
     background: #{{ site.color.primary }};
+    position: relative;
+    overflow: hidden;
+}
+
+header .parallax-layer {
+    will-change: transform;
+    transition: transform 0.1s linear;
 }
 
 header .container {

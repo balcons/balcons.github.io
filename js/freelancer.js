@@ -35,3 +35,16 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Simple parallax effect for header artwork/text
+$(window).on('scroll', function () {
+    var $header = $('header');
+    if (!$header.length) return;
+
+    var scrollTop = $(this).scrollTop();
+    var headerHeight = $header.outerHeight() || 1;
+    var progress = Math.min(scrollTop / headerHeight, 1);
+    var translate = progress * -40; // move content slightly upwards
+
+    $header.find('.parallax-layer').css('transform', 'translateY(' + translate + 'px)');
+});
