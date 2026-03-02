@@ -1,5 +1,6 @@
 function initializeLeaflet() {
-  $('.modal').on('shown.bs.modal', function () {
+  // Use the same event as the original Google Maps code for compatibility
+  $('.modal').on('show.bs.modal', function () {
     var $modal = $(this);
     var latlngAttr = $modal.attr('data-latlng');
     if (!latlngAttr) {
