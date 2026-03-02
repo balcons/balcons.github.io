@@ -3,6 +3,7 @@ function initializeLeaflet() {
     var $modal = $(this);
     var latlngAttr = $modal.attr('data-latlng');
     if (!latlngAttr) {
+      console.warn('No data-latlng attribute on modal, skipping map init');
       return;
     }
 
@@ -12,6 +13,7 @@ function initializeLeaflet() {
 
     var container = $modal.find('.map-canvas')[0];
     if (!container) {
+      console.warn('No .map-canvas element found in modal, skipping map init');
       return;
     }
 
@@ -19,6 +21,8 @@ function initializeLeaflet() {
     if (container._leaflet_id) {
       container._leaflet_id = null;
     }
+
+    console.log('Initializing Leaflet map at', latlng);
 
     var map = L.map(container).setView(latlng, 18);
 
