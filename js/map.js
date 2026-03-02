@@ -1,41 +1,38 @@
-function initialize() {
-    $('.modal').on('show.bs.modal', function (event) {
-      setTimeout(function() {
-        var latlng = $(this).attr('data-latlng').split(',').map(function(str) {
-          return parseFloat(str);
-        });
-        var position = new google.maps.LatLng(latlng[0], latlng[1]);
-        var mapOptions = {
-          center: position,
-          zoom: 18
-        };
-        var map = new google.maps.Map(
-            $(this).find('.map-canvas')[0], mapOptions);
-        var panoramaOptions = {
-          position: position,
-          pov: {
-            heading: 270,
-            pitch: 95
-          },
-        };
-        var marker = new google.maps.Marker({
-              position: position,
-              map: map
-        });
+function initializeLeaflet() {
+  $('.modal').on('shown.bs.modal', function () {
+    var $modal = $(this);
+    var latlngAttr = $modal.attr('data-latlng');
+    if (!latlngAttr) {
+      return;
+    }
 
-        // Works only on first modal. The others are displaying only google map but not streetview.
-        // var panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), panoramaOptions);
-        // panorama.setVisible(true);
-        // map.setStreetView(panorama);
-        var myPano = new google.maps.StreetViewPanorama(
-              document.getElementById('pano'),
-              panoramaOptions);
-        myPano.setVisible(true);
-
-
-
-      }.bind(this), 1000);
+    var latlng = latlngAttr.split(',').map(function (str) {
+      return parseFloat(str);
     });
-  }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+    var container = $modal.find('.map-canvas')[0];
+    if (!container) {
+      return;
+    }
+
+    // If a map was already initialized in this element, reset it
+    if (container._leaflet_id) {
+      container._leaflet_id = null;
+    }
+
+    var map = L.map(container).setView(latlng, 18);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker(latlng).addTo(map);
+
+    // Ensure proper sizing after modal animation
+    setTimeout(function () {
+      map.invalidateSize();
+    }, 200);
+  });
+}
+
+$(window).on('load', initializeLeaflet);
