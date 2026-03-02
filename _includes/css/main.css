@@ -442,12 +442,18 @@ footer .footer-below {
     width: min(70vw, 520px);
     height: min(70vw, 520px);
     max-width: 100%;
-    margin: 20px auto 0;
+    margin: 0 auto 20px;
 }
 
 .portfolio-modal .modal-content img {
     object-fit: cover;
     display: block;
+}
+
+.portfolio-modal .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 20px;
 }
 
 .portfolio-modal .modal-content .item-details {
