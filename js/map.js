@@ -1,43 +1,33 @@
-function initializeLeaflet() {
-  // Use the same event as the original Google Maps code for compatibility
+function initialize() {
   $('.modal').on('show.bs.modal', function () {
-    var $modal = $(this);
-    var latlngAttr = $modal.attr('data-latlng');
-    if (!latlngAttr) {
-      console.warn('No data-latlng attribute on modal, skipping map init');
-      return;
-    }
-
-    var latlng = latlngAttr.split(',').map(function (str) {
-      return parseFloat(str);
-    });
-
-    var container = $modal.find('.map-canvas')[0];
-    if (!container) {
-      console.warn('No .map-canvas element found in modal, skipping map init');
-      return;
-    }
-
-    // If a map was already initialized in this element, reset it
-    if (container._leaflet_id) {
-      container._leaflet_id = null;
-    }
-
-    console.log('Initializing Leaflet map at', latlng);
-
-    var map = L.map(container).setView(latlng, 18);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
-    L.marker(latlng).addTo(map);
-
-    // Ensure proper sizing after modal animation
     setTimeout(function () {
-      map.invalidateSize();
-    }, 200);
+      var latlngAttr = $(this).attr('data-latlng');
+      if (!latlngAttr) {
+        return;
+      }
+
+      var latlng = latlngAttr.split(',').map(function (str) {
+        return parseFloat(str);
+      });
+
+      var position = new google.maps.LatLng(latlng[0], latlng[1]);
+      var mapOptions = {
+        center: position,
+        zoom: 18
+      };
+
+      var container = $(this).find('.map-canvas')[0];
+      if (!container) {
+        return;
+      }
+
+      var map = new google.maps.Map(container, mapOptions);
+      new google.maps.Marker({
+        position: position,
+        map: map
+      });
+    }.bind(this), 1000);
   });
 }
 
-$(window).on('load', initializeLeaflet);
+google.maps.event.addDomListener(window, 'load', initialize);
