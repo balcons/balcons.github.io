@@ -437,19 +437,17 @@ footer .footer-below {
     font-size: 3em;
 }
 
-.portfolio-modal .modal-body,
+.portfolio-modal .modal-content img,
 .portfolio-modal .map-canvas {
-    width: min(80vw, 640px);
-    height: min(80vw, 640px);
+    width: min(70vw, 520px);
+    height: min(70vw, 520px);
     max-width: 100%;
     margin: 20px auto 0;
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .portfolio-modal .modal-content .item-details {
