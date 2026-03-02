@@ -22,7 +22,8 @@
 
     <!-- Map: Leaflet + OpenStreetMap (free, no billing) -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="{{ "/js/map.js" }}"></script>
+    <!-- cache-busting query param ensures browsers load latest map.js -->
+    <script src="{{ "/js/map.js?v=2" }}"></script>
 
     <script> 
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
