@@ -437,27 +437,7 @@ footer .footer-below {
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content img,
-.portfolio-modal .map-canvas {
-    width: min(70vw, 520px);
-    height: min(70vw, 520px);
-    max-width: 100%;
-    margin: 0 auto 20px;
-}
-
-.portfolio-modal .modal-content img {
-    object-fit: cover;
-    display: block;
-}
-
-.portfolio-modal .map-canvas img {
-    max-width: none;
-}
-
-.portfolio-modal .modal-body {
-    padding-top: 0;
-    padding-bottom: 0;
-}
+/* Use natural image sizing and inline map sizing in modal */
 
 .portfolio-modal .modal-content .item-details {
     margin: 30px 0;
