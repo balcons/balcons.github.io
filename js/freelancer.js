@@ -36,15 +36,43 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// Simple parallax effect for header artwork/text
+// Simple parallax effect for header artwork/text + portfolio reveal
 $(window).on('scroll', function () {
+    var $win = $(this);
+    var scrollTop = $win.scrollTop();
+    var winHeight = $win.height();
+
     var $header = $('header');
-    if (!$header.length) return;
+    if ($header.length) {
+        var headerHeight = $header.outerHeight() || 1;
+        var headerProgress = Math.min(scrollTop / headerHeight, 1);
+        var headerTranslate = headerProgress * -40; // move content slightly upwards
+        $header.find('.parallax-layer').css('transform', 'translateY(' + headerTranslate + 'px)');
+    }
 
-    var scrollTop = $(this).scrollTop();
-    var headerHeight = $header.outerHeight() || 1;
-    var progress = Math.min(scrollTop / headerHeight, 1);
-    var translate = progress * -40; // move content slightly upwards
+    // Portfolio image reveal + subtle parallax
+    $('.portfolio-parallax-img').each(function () {
+        var $img = $(this);
+        var imgTop = $img.offset().top;
+        var distance = imgTop - scrollTop;
 
-    $header.find('.parallax-layer').css('transform', 'translateY(' + translate + 'px)');
+        // When image is near or inside viewport, reveal it
+        if (distance < winHeight * 0.9) {
+            $img.addClass('is-visible');
+        }
+
+        if (!$img.hasClass('is-visible')) {
+            return;
+        }
+
+        // Small vertical parallax based on position in viewport
+        var normalized = (distance / winHeight) - 0.5; // -0.5 .. 0.5
+        var offset = normalized * -20; // -10px .. 10px
+        $img.css('transform', 'translateY(' + offset + 'px) scale(1.02)');
+    });
+});
+
+// Ensure initial state on load/resize
+$(window).on('load resize', function () {
+    $(window).trigger('scroll');
 });

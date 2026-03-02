@@ -259,6 +259,19 @@ section.success {
     z-index: 2;
 }
 
+/* Scroll reveal + parallax for portfolio images */
+.portfolio-parallax-img {
+    transform: translateY(40px) scale(0.97);
+    opacity: 0;
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.7s ease-out;
+    will-change: transform, opacity;
+}
+
+.portfolio-parallax-img.is-visible {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
