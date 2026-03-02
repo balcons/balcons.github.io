@@ -450,6 +450,10 @@ footer .footer-below {
     display: block;
 }
 
+.portfolio-modal .map-canvas img {
+    max-width: none;
+}
+
 .portfolio-modal .modal-body {
     padding-top: 0;
     padding-bottom: 0;
