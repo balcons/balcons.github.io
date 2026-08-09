@@ -1,0 +1,160 @@
+{% assign for_sale_posts = site.posts | where: "for_sale", true %}
+{% assign catalog = site.products | concat: for_sale_posts %}
+{% assign catalog = catalog | sort: "date" | reverse %}
+
+<section id="shop" class="shop-section">
+    <div class="container">
+        <div class="shop-intro text-center">
+            <h2>Shop</h2>
+            <p class="shop-lead">Bring a piece of Barcelona into your home. Fine art prints of my original digital paintings.</p>
+        </div>
+
+        <div class="row shop-layout">
+            <aside class="col-md-3 shop-filters" id="shop-filters">
+                <div class="shop-filters-header">
+                    <h3>Filters</h3>
+                    <button type="button" class="shop-clear-filters" id="shop-clear-filters">Clear all</button>
+                </div>
+
+                <div class="shop-filter-group">
+                    <h4>Color</h4>
+                    <div class="shop-color-swatches" id="shop-color-filters">
+                        {% assign color_list = "beige,coral,yellow,sage,blue,lavender,grey,white,black,brown,pink" | split: "," %}
+                        {% for c in color_list %}
+                        <button type="button" class="shop-color-swatch shop-color-{{ c }}" data-color="{{ c }}" title="{{ c }}" aria-label="Filter {{ c }}"></button>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="shop-filter-group">
+                    <h4>District</h4>
+                    <div class="shop-check-list" id="shop-district-filters">
+                        {% assign districts = "Eixample,Gràcia,El Born,Sarrià - Sant Gervasi,Poblenou,Gòtic,Sant Andreu,Sants - Montjuïc" | split: "," %}
+                        {% for d in districts %}
+                        <label class="shop-check">
+                            <input type="checkbox" value="{{ d }}">
+                            <span>{{ d }}</span>
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="shop-filter-group">
+                    <h4>Size</h4>
+                    <div class="shop-check-list" id="shop-size-filters">
+                        <label class="shop-check">
+                            <input type="checkbox" value="20x20 cm">
+                            <span>20x20 cm</span>
+                        </label>
+                        <label class="shop-check">
+                            <input type="checkbox" value="30x30 cm">
+                            <span>30x30 cm</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-shop-outline btn-block" id="shop-apply-filters">
+                    <i class="fa fa-filter"></i> Apply Filters
+                </button>
+            </aside>
+
+            <div class="col-md-9 shop-main">
+                <div class="shop-toolbar">
+                    <div class="shop-result-count"><span id="shop-result-count">{{ catalog.size }}</span> prints</div>
+                    <label class="shop-sort">
+                        Sort by:
+                        <select id="shop-sort">
+                            <option value="newest">Newest</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="title">Title</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="row shop-grid" id="shop-grid">
+                    {% for item in catalog %}
+                    {% assign cover = item.images[0] | default: item.img %}
+                    {% assign price = item.price | default: 50 %}
+                    {% assign size = item.size | default: "20x20 cm" %}
+                    {% assign colors = item.colors | join: "," %}
+                    {% assign district = item.district | default: "" %}
+                    {% assign product_id = item.sku | default: item.slug %}
+                    {% if product_id == nil or product_id == "" %}
+                        {% assign product_id = item.title | slugify %}
+                    {% endif %}
+                    <div class="col-sm-6 col-md-4 shop-card-wrap"
+                         data-id="{{ product_id }}"
+                         data-title="{{ item.title | escape }}"
+                         data-price="{{ price }}"
+                         data-size="{{ size }}"
+                         data-district="{{ district }}"
+                         data-colors="{{ colors }}"
+                         data-date="{{ item.date | date: '%Y-%m-%d' }}"
+                         data-images="{% if item.images %}{% for img in item.images %}{{ img }}{% unless forloop.last %},{% endunless %}{% endfor %}{% elsif item.img %}{{ item.img }}{% endif %}">
+                        <article class="shop-card">
+                            <button type="button" class="shop-card-media shop-open-gallery" aria-label="View {{ item.title | escape }}">
+                                <img src="{{ site.url }}/img/portfolio/{{ cover }}" alt="{{ item.title | escape }}">
+                                {% if item.images and item.images.size > 1 %}
+                                <span class="shop-photo-count"><i class="fa fa-camera"></i> {{ item.images.size }}</span>
+                                {% endif %}
+                            </button>
+                            <h3 class="shop-card-title">{{ item.title }}</h3>
+                            <div class="shop-card-meta">
+                                <span>{{ size }}</span>
+                                <span class="shop-card-price">€{{ price | round: 2 }}</span>
+                            </div>
+                            <button type="button"
+                                    class="btn btn-shop-primary btn-block shop-add-to-cart"
+                                    data-id="{{ product_id }}"
+                                    data-title="{{ item.title | escape }}"
+                                    data-price="{{ price }}"
+                                    data-size="{{ size }}"
+                                    data-image="{{ cover }}">
+                                Add to cart
+                            </button>
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="shop-empty" id="shop-empty" hidden>
+                    No prints match these filters.
+                </div>
+
+                <div class="shop-custom-cta">
+                    <p>Can't find your perfect balcony? Request a custom print or a different size.</p>
+                    <a class="btn btn-shop-outline" href="mailto:{{ site.shop.custom_print_email }}?subject=Custom%20print%20request">
+                        <i class="fa fa-envelope-o"></i> Request Custom Print
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="shop-gallery-modal" id="shop-gallery-modal" hidden>
+    <div class="shop-gallery-dialog" role="dialog" aria-modal="true" aria-label="Product photos">
+        <button type="button" class="shop-gallery-close" id="shop-gallery-close" aria-label="Close">&times;</button>
+        <img src="" alt="" id="shop-gallery-image">
+        <div class="shop-gallery-nav">
+            <button type="button" id="shop-gallery-prev" aria-label="Previous photo"><i class="fa fa-chevron-left"></i></button>
+            <span id="shop-gallery-counter"></span>
+            <button type="button" id="shop-gallery-next" aria-label="Next photo"><i class="fa fa-chevron-right"></i></button>
+        </div>
+        <h3 id="shop-gallery-title"></h3>
+    </div>
+</div>
+
+<script type="application/json" id="shop-config">
+{
+  "currency": {{ site.shop.currency | jsonify }},
+  "shippingSpain": {{ site.shop.shipping_spain_eur }},
+  "shippingInternational": {{ site.shop.shipping_international_eur }},
+  "stripePublishableKey": {{ site.shop.stripe_publishable_key | jsonify }},
+  "checkoutApiUrl": {{ site.shop.checkout_api_url | jsonify }},
+  "successUrl": {{ site.url | append: "/shop/success/" | jsonify }},
+  "cancelUrl": {{ site.url | append: "/shop/cancel/" | jsonify }},
+  "siteUrl": {{ site.url | jsonify }}
+}
+</script>

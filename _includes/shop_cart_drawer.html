@@ -1,0 +1,29 @@
+<aside class="shop-cart-drawer" id="shop-cart-drawer" aria-hidden="true">
+    <div class="shop-cart-panel">
+        <div class="shop-cart-header">
+            <h3>Your cart</h3>
+            <button type="button" class="shop-cart-close" id="shop-cart-close" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="shop-cart-items" id="shop-cart-items"></div>
+        <div class="shop-cart-footer">
+            <div class="shop-cart-shipping">
+                <label for="shop-shipping-region">Shipping</label>
+                <select id="shop-shipping-region">
+                    <option value="spain">Spain — €{{ site.shop.shipping_spain_eur }}</option>
+                    <option value="international">Outside Spain — €{{ site.shop.shipping_international_eur }}</option>
+                </select>
+            </div>
+            <div class="shop-cart-totals">
+                <div><span>Subtotal</span><strong id="shop-cart-subtotal">€0.00</strong></div>
+                <div><span>Shipping</span><strong id="shop-cart-shipping">€{{ site.shop.shipping_spain_eur }}.00</strong></div>
+                <div class="shop-cart-total"><span>Total</span><strong id="shop-cart-total">€0.00</strong></div>
+            </div>
+            <p class="shop-cart-hint">Secure checkout with Stripe. Shipping is added at payment.</p>
+            <button type="button" class="btn btn-shop-primary btn-block" id="shop-checkout-btn" disabled>
+                Checkout with Stripe
+            </button>
+            <p class="shop-cart-error" id="shop-cart-error" hidden></p>
+        </div>
+    </div>
+</aside>
+<div class="shop-cart-backdrop" id="shop-cart-backdrop" hidden></div>

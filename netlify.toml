@@ -1,0 +1,13 @@
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "nft"
+
+[dev]
+  command = "bundle exec jekyll serve --host 127.0.0.1 --port 4000"
+  targetPort = 4000
+  port = 8888
+  publish = "_site"

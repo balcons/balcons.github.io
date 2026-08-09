@@ -38,9 +38,36 @@ address:
 # Credits content
 credits: 'Jerome Lachaud'
 
+# Shop / Stripe (publishable key is safe in the browser; secret key stays in Netlify env)
+shop:
+  currency: eur
+  shipping_spain_eur: 7
+  shipping_international_eur: 14
+  # Create at https://dashboard.stripe.com/apikeys — use test keys locally
+  stripe_publishable_key: ""
+  # Netlify function URL after deploy, e.g. https://yoursite.netlify.app/.netlify/functions/create-checkout
+  # Local: http://127.0.0.1:8888/.netlify/functions/create-checkout (netlify dev)
+  checkout_api_url: "/.netlify/functions/create-checkout"
+  custom_print_email: balconsche@gmail.com
+
 # Build settings
 markdown: kramdown
 permalink: pretty
 
+collections:
+  products:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: null
+
+plugins:
+  - jekyll-sitemap
+
+# Legacy alias (older Jekyll)
 gems:
   - jekyll-sitemap
