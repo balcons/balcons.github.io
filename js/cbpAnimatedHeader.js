@@ -13,7 +13,8 @@ var cbpAnimatedHeader = (function() {
 	var docElem = document.documentElement,
 		header = document.querySelector( '.navbar-fixed-top' ),
 		didScroll = false,
-		changeHeaderOn = 300;
+		changeHeaderOn = 300,
+		releaseHeaderOn = 240;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -26,10 +27,11 @@ var cbpAnimatedHeader = (function() {
 
 	function scrollPage() {
 		var sy = scrollY();
+		// Hysteresis so height changes near the threshold don't flicker
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
 		}
-		else {
+		else if ( sy <= releaseHeaderOn ) {
 			classie.remove( header, 'navbar-shrink' );
 		}
 		didScroll = false;

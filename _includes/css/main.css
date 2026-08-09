@@ -146,9 +146,9 @@ header .intro-text .skills {
 
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
+        -webkit-transition: font-size .3s;
+        -moz-transition: font-size .3s;
+        transition: font-size .3s;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -156,7 +156,7 @@ header .intro-text .skills {
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 }
 
@@ -182,6 +182,28 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+/* Rounded nav buttons + stable hover (avoids primary-on-secondary flicker) */
+.navbar-default .navbar-nav > li > a {
+    border-radius: 8px;
+    -webkit-transition: background-color .2s ease, color .2s ease;
+    -moz-transition: background-color .2s ease, color .2s ease;
+    transition: background-color .2s ease, color .2s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #1a242f;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #1a242f;
+    border-radius: 8px;
 }
 
 section {

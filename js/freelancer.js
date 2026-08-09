@@ -8,8 +8,17 @@
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
+        var href = $anchor.attr('href');
+        // Only smooth-scroll in-page hash links (skip external/relative URLs)
+        if (!href || href.charAt(0) !== '#') {
+            return;
+        }
+        var $target = $(href);
+        if (!$target.length) {
+            return;
+        }
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $target.offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
