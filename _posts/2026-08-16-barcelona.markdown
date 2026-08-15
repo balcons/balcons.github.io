@@ -8,5 +8,5 @@ project-date: 2026
 client: Start Bootstrap
 category: mibarcelona
 description: PARASOL☂️! Carrer de Sant Antoni Maria Claret, 268
-latlng: 41.4126329,2.1739444,17z
+latlng: 41.4126329,2.1739444,3a
 ---
