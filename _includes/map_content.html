@@ -1,0 +1,72 @@
+{% assign mapped_posts = site.posts | where_exp: "post", "post.latlng" %}
+<section id="balconies-map-section" class="map-section">
+    <div class="container">
+        <div class="map-intro text-center">
+            <h2>Balconies Map</h2>
+            <p class="map-lead">Explore all the illustrated balconies and find them on the map.</p>
+        </div>
+
+        <div class="map-toolbar">
+            <div class="map-pills" role="tablist" aria-label="Collection">
+                <button type="button" class="map-pill is-active" data-collection="barcelona" aria-pressed="true">Barcelona</button>
+                <button type="button" class="map-pill" data-collection="world" aria-pressed="false">World</button>
+            </div>
+            <label class="map-select-wrap">
+                <span class="sr-only">District</span>
+                <select id="map-district-filter" aria-label="All districts">
+                    <option value="">All districts</option>
+                </select>
+            </label>
+            <label class="map-select-wrap">
+                <span class="sr-only">Style</span>
+                <select id="map-style-filter" aria-label="All styles">
+                    <option value="">All styles</option>
+                </select>
+            </label>
+            <div class="map-count" id="map-count">0 balconies</div>
+        </div>
+
+        <div class="map-frame">
+            <div id="balconies-map" class="map-canvas-full" role="application" aria-label="Map of balcony locations"></div>
+            <div class="map-controls">
+                <button type="button" class="map-control-btn" id="map-locate" title="My location" aria-label="My location">
+                    <i class="fa fa-location-arrow"></i>
+                </button>
+                <button type="button" class="map-control-btn" id="map-zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+                <button type="button" class="map-control-btn" id="map-zoom-out" title="Zoom out" aria-label="Zoom out">&minus;</button>
+            </div>
+            <div class="map-preview" id="map-preview" hidden>
+                <button type="button" class="map-preview-close" id="map-preview-close" aria-label="Close preview">&times;</button>
+                <img id="map-preview-img" alt="">
+                <div class="map-preview-body">
+                    <div class="map-preview-district" id="map-preview-district"></div>
+                    <div class="map-preview-street" id="map-preview-street"></div>
+                    <button type="button" class="map-preview-link" id="map-preview-open">View illustration &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="map-lightbox" id="map-lightbox" hidden>
+    <button type="button" class="map-lightbox-close" id="map-lightbox-close" aria-label="Close illustration">&times;</button>
+    <img id="map-lightbox-img" alt="">
+    <p id="map-lightbox-caption"></p>
+</div>
+
+<script type="application/json" id="balconies-map-data">
+[
+{% for post in mapped_posts %}
+  {% assign coords = post.latlng | split: "," %}
+  {
+    "id": {{ post.modal-id | jsonify }},
+    "lat": {{ coords[0] | strip | plus: 0 }},
+    "lng": {{ coords[1] | strip | plus: 0 }},
+    "img": {{ post.img | jsonify }},
+    "description": {{ post.description | jsonify }},
+    "category": {{ post.category | jsonify }},
+    "collection": {% if post.categories contains "amsterdam" %}"world"{% else %}"barcelona"{% endif %}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
+</script>
