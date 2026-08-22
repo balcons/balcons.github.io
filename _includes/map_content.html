@@ -8,7 +8,7 @@
 
         <div class="map-toolbar">
             <div class="map-pills" role="tablist" aria-label="Collection">
-                <button type="button" class="map-pill is-active" data-collection="barcelona" aria-pressed="true">Barcelona</button>
+                <button type="button" class="map-pill is-active" data-collection="barcelona" aria-pressed="true">Spain</button>
                 <button type="button" class="map-pill" data-collection="world" aria-pressed="false">World</button>
             </div>
             <label class="map-select-wrap">
@@ -41,7 +41,7 @@
                 <div class="map-preview-body">
                     <div class="map-preview-district" id="map-preview-district"></div>
                     <div class="map-preview-street" id="map-preview-street"></div>
-                    <button type="button" class="map-preview-link" id="map-preview-open">View illustration &rarr;</button>
+                    <a class="map-preview-link" id="map-preview-open" href="#">View illustration &rarr;</a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,8 @@
     "img": {{ post.img | jsonify }},
     "description": {{ post.description | jsonify }},
     "category": {{ post.category | jsonify }},
-    "collection": {% if post.categories contains "amsterdam" %}"world"{% else %}"barcelona"{% endif %}
+    "collection": {% if post.categories contains "amsterdam" %}"world"{% else %}"barcelona"{% endif %},
+    "url": {% if post.categories contains "amsterdam" %}"{{ "/amsterdam/amsterdam/" | relative_url }}#portfolioModal-{{ post.modal-id }}"{% else %}"{{ "/" | relative_url }}#portfolioModal-{{ post.modal-id }}"{% endif %}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]

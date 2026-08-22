@@ -27,15 +27,20 @@ function initialize() {
         // var panorama = new google.maps.StreetViewPanorama(document.getElementById('pano'), panoramaOptions);
         // panorama.setVisible(true);
         // map.setStreetView(panorama);
-        var myPano = new google.maps.StreetViewPanorama(
-              document.getElementById('pano'),
-              panoramaOptions);
-        myPano.setVisible(true);
-
-
-
+        var myPanoEl = document.getElementById('pano');
+        if (myPanoEl) {
+          var myPano = new google.maps.StreetViewPanorama(
+                myPanoEl,
+                panoramaOptions);
+          myPano.setVisible(true);
+        }
       }.bind(this), 1000);
     });
+
+    var hash = window.location.hash;
+    if (hash && hash.indexOf('#portfolioModal-') === 0 && $(hash).length) {
+      $(hash).modal('show');
+    }
   }
 
 google.maps.event.addDomListener(window, 'load', initialize);

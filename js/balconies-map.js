@@ -205,10 +205,6 @@
     }
   }
 
-  function isMobile() {
-    return window.matchMedia("(max-width: 767px)").matches;
-  }
-
   function imageUrl(item) {
     return IMAGE_BASE + item.img;
   }
@@ -266,6 +262,10 @@
       panTo: function (lat, lng) {
         map.panTo({ lat: lat, lng: lng });
       },
+      focus: function (lat, lng, zoom) {
+        map.panTo({ lat: lat, lng: lng });
+        map.setZoom(zoom || 18);
+      },
       setActive: function (marker, active) {
         marker.setIcon(active ? googleActive : googlePin);
         marker.setZIndex(active ? 1000 : 1);
@@ -316,8 +316,19 @@
           gestureHandling: "greedy",
           clickableIcons: false,
           mapTypeControl: false,
-          streetViewControl: false,
-          fullscreenControl: false
+          zoomControl: false,
+          fullscreenControl: false,
+          streetViewControl: true,
+          streetViewControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_BOTTOM
+          }
+        });
+        var streetView = map.getStreetView();
+        streetView.addListener("visible_changed", function () {
+          var controls = document.querySelector(".map-controls");
+          if (controls) {
+            controls.hidden = streetView.getVisible();
+          }
         });
       } catch (err) {
         finish(err);
@@ -376,7 +387,11 @@
     var center = state.collection === "world" ? WORLD_CENTER : BARCELONA_CENTER;
     var zoom = state.collection === "world" ? 4 : 13;
     var googleReady = window.google && google.maps && google.maps.importLibrary
-      ? Promise.all([google.maps.importLibrary("maps"), google.maps.importLibrary("marker")]).catch(function () {})
+      ? Promise.all([
+          google.maps.importLibrary("maps"),
+          google.maps.importLibrary("marker"),
+          google.maps.importLibrary("streetView")
+        ]).catch(function () {})
       : Promise.resolve();
 
     googleReady.then(function () {
@@ -452,10 +467,9 @@
           ? (item.city && item.country && item.city !== item.country ? item.city + ", " + item.country : (item.country || item.city))
           : item.district;
         previewStreet.textContent = item.street || item.description;
+        previewOpen.href = item.url || "#";
         preview.hidden = false;
-        if (!isMobile()) {
-          engine.panTo(item.lat, item.lng);
-        }
+        engine.focus(item.lat, item.lng, 18);
       }
 
       function openLightbox(item) {
@@ -519,11 +533,6 @@
         render();
       });
       previewClose.addEventListener("click", hidePreview);
-      previewOpen.addEventListener("click", function () {
-        if (selectedItem) {
-          openLightbox(selectedItem);
-        }
-      });
       lightboxClose.addEventListener("click", closeLightbox);
       lightbox.addEventListener("click", function (event) {
         if (event.target === lightbox) {
